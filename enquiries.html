@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Enquiry</title>
+		<link rel="stylesheet" type="text/css" href="Styles/style.css"/>
+	</head>
+	<div align="center">
+		<body class = "other">
+			<header>
+				<h1>
+					Enquiry Form
+				</h1>
+					<table>
+						<ul>
+							<li><a href = "index.html">Home</a></li>
+							<li><a href = "examples.html">Recent projects</a></li>
+							<li><a href = "details.html">Contact Details</a></li>
+							<li><a href = "enquiries.html">Enquiry Form</a></li>
+						</ul>
+					</table>
+			</header>
+			<form method="post" 
+			action="mailto:hopkinshomemaintenance@gmail.com?subject=Enquiry" 
+			enctype="text/plain">
+				<fieldset>
+					<legend>Personal Details</legend>
+						<div align="center">
+							<table>
+								<tr>
+									<td>First Name</td>
+									<td><input type="text" name="firstname"/></td>
+								</tr>
+								<tr>
+									<td>Surname Name</td>
+									<td><input type="text" name="lastname"/></td>
+								</tr>
+								<tr>
+									<td>Phone Number</td>
+									<td><input type="text" name="number" required pattern="\d{3}[\-]\d{3}[\-]\d{4}" 
+									title = "Must be 999-999-9999"/></td>
+								</tr>
+								<tr>
+									<td>Address</td>
+									<td><input type="text" name="line1"/></td>
+								</tr>
+								<tr>
+									<td>Details of Enquiry</td>
+									<td><input type="text" name="comment" size = "50"/></td>
+								
+								</tr>
+								<tr>
+									<td><input type="submit" value = "Send"/></td>
+									<td><input type="reset" value = "Reset"/></td>
+								</tr>
+							</table>
+						</div>	
+				</fieldset>
+			</form>
+			<p>
+				<img src="http://www.w3.org/html/logo/downloads/HTML5_Logo_64.png"
+				alt="Valid HTML5 code" />
+			</p>
+			
+		</body>
+	</div>
+</html>
